@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Skies Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Aurora Skies Hotel</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Luxury Under the Northern Lights</h2>
+            <p>Experience unmatched serenity and indulgence from our panoramic rooftop retreat.</p>
+            <a href="#booking" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="section" id="rooms">
+        <h2>Rooms & Suites</h2>
+        <div class="room-list">
+            <div class="room">
+                <img src="img/deluxe.jpg" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>Modern interior with rooftop view, king-size bed, minibar, and complimentary breakfast.</p>
+            </div>
+            <div class="room">
+                <img src="img/executivesuite.jpg" alt="Executive Suite">
+                <h3>Executive Suite</h3>
+                <p>Spacious suite with private balcony, rooftop jacuzzi, premium toiletries, and lounge access.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="section" id="amenities">
+        <h2>Amenities</h2>
+        <ul class="amenities-list">
+            <li>Rooftop Infinity Pool</li>
+            <li>Sky Lounge Bar</li>
+            <li>Full-Service Spa</li>
+            <li>Fitness Studio</li>
+            <li>Private Rooftop Dining</li>
+            <li>High-speed WiFi</li>
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="img/gallery1.jpg" alt="Gallery Image 1">
+            <img src="img/gallery2.jpg" alt="Gallery Image 2">
+            <img src="img/gallery3.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section" id="reviews">
+        <h2>Guest Reviews</h2>
+        <div class="review-list">
+            <div class="review">
+                <p>"The staff was incredibly friendly, and the views were breathtaking. Highly recommend!"</p>
+                <h4>- Sarah Johnson</h4>
+            </div>
+            <div class="review">
+                <p>"The rooftop dining experience was unforgettable. The food and ambiance were perfect!"</p>
+                <h4>- David Lee</h4>
+            </div>
+            <div class="review">
+                <p>"The perfect getaway! The rooms were spotless, and the food was amazing."</p>
+                <h4>- Emily White</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section" id="booking">
+        <h2>Make a Reservation</h2>
+        <form class="booking-form">
+            <input type="date" name="checkin" required>
+            <input type="date" name="checkout" required>
+            <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+            <select name="room-type" required>
+                <option value="">Select Room Type</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Executive Suite</option>
+            </select>
+            <button type="submit" class="btn">Check Availability</button>
+        </form>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>Located in the heart of nature’s most spectacular sky show, Aurora Skies Hotel offers a perfect blend of modern luxury and natural beauty. Our rooftop paradise is the ideal place to unwind, celebrate, and create unforgettable memories under the stars.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +254 712 345678</p>
+            <p><strong>Email:</strong> denilishon@gmail.com</p>
+            <p><strong>Location:</strong> Diani Beach Road, Diani, Kenya</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aurora Skies Hotel. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removed Live Chat Widget -->
+</body>
+</html>

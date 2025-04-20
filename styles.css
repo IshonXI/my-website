@@ -1,0 +1,165 @@
+/* General Reset & Base Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+body { 
+    line-height: 1.6; 
+    background-color: transparent; /* Makes the body background transparent */
+    color: #333; 
+    background-image: url('img/background.jpg'); /* Apply background image to the entire page */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-position: center; /* Centers the background image */
+}
+
+.container { max-width: 1200px; margin: auto; padding: 20px; }
+
+header { background: #000; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+
+.logo { font-size: 1.8rem; font-weight: 700; }
+
+.nav-links { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+
+.nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+
+.nav-links a:hover { color: #f4b400; }
+
+/* Hero Section */ 
+.hero { 
+    height: auto; /* Adjust height to allow content to expand */ 
+    min-height: 100vh; /* Ensures it covers at least the viewport height */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white; 
+    padding: 40px; 
+    background-attachment: fixed; /* Enables parallax scrolling */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text h2 { font-size: 3rem; margin-bottom: 10px; }
+
+.hero-text p { font-size: 1.2rem; margin-bottom: 20px; }
+
+.btn { padding: 12px 30px; background: #f4b400; color: white; text-decoration: none; border: none; font-weight: bold; border-radius: 4px; transition: background 0.3s; }
+
+.btn:hover { background: #d39e00; }
+
+.section { 
+    padding: 60px 20px; 
+    text-align: center; 
+    background-color: transparent; /* Removes white background from sections */
+}
+
+.section h2 { font-size: 2.2rem; margin-bottom: 30px; color: #111; }
+
+.room-list { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+
+.room { max-width: 400px; background: white; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px; transition: transform 0.3s; }
+
+.room:hover { transform: scale(1.02); }
+
+.room img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+.amenities-list { 
+    list-style: none; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px; 
+    padding: 0 10px; 
+    color: #f4f4f4; /* Lighter text color for better visibility */
+}
+
+#about, #contact {
+    color: #f4f4f4; /* Lighter text color for better visibility */
+}
+
+#about h2, #contact h2 {
+    color: #f4f4f4; /* Lighter text color for better visibility */
+}
+
+#gallery, #amenities, #rooms {
+    color: #f4f4f4; /* Lighter text color for better visibility */
+}
+
+#rooms {
+    color: #111; /* Darker text color for better readability */
+}
+
+#gallery h2, #amenities h2, #rooms h2 {
+    color: #f4f4f4; /* Lighter text color for better visibility */
+}
+
+#booking h2 {
+    color: #f4f4f4; /* Lighter text color for better visibility */
+}
+
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+
+.gallery-grid img { width: 100%; border-radius: 10px; height: 200px; object-fit: cover; }
+
+.booking-form, .contact-form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+
+.booking-form input, .booking-form select, .contact-form input, .contact-form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+
+footer { background: #111; color: white; text-align: center; padding: 20px 0; margin-top: 40px; }
+
+.social-links a { color: #f4b400; text-decoration: none; margin: 0 5px; }
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.review {
+    max-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.review p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.review h4 {
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) { .hero-text h2 { font-size: 2rem; }
+
+.nav-links {
+    flex-direction: column;
+}
+
+.room-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form,
+.contact-form {
+    width: 90%;
+}
+
+}
